@@ -12,12 +12,12 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Quiz App!"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="@string/quiz_app"
         android:textSize="25sp"
         android:textStyle="bold"
-        android:gravity="center"
         android:textColor="@color/white"
-        android:layout_marginBottom="30dp"
          />
 
     <com.google.android.material.card.MaterialCardView
@@ -37,35 +37,36 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Welcome"
+                android:gravity="center"
+                android:text="@string/welcome"
                 android:textSize="30sp"
                 android:textStyle="bold"
-                android:gravity="center"
                 android:textColor="#363A43"
                 />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:layout_marginTop="16dp"
-                android:text="Please enter your name"
+                android:text="@string/please_enter_your_name"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:gravity="center"
                 android:textColor="#7A8089"
                 />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_marginTop="20dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
                 >
                 <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/et_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Ex.: Nicolas"
+                    android:hint="@string/ex_nicolas"
                     android:inputType="textCapWords"
                     android:textColor="#363A43"
                     android:textColorHint="#7A8089"
@@ -78,9 +79,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:background="@color/design_default_color_primary"
+                android:text="@string/start"
                 android:textColor="@color/white"
                 android:textSize="18sp"
-                android:text="START"
                 />
 
         </LinearLayout>

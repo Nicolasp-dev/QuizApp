@@ -1,7 +1,9 @@
 package com.kotlin.myquizapp
 
+
 object Constants {
   fun getQuestions(): ArrayList<Question>{
+
     val questionList = ArrayList<Question>()
 
     val que1 = Question(
